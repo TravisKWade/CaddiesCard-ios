@@ -10,7 +10,7 @@ import UIKit
 
 class ScoreCardViewController: UIViewController {
 
-    @IBOutlet var scoreTable: UITableView
+    @IBOutlet var scoreTable: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

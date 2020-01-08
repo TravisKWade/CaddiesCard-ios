@@ -12,5 +12,19 @@ class MainMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupNavigation()
+    }
+    
+    // MARK: - setup
+    
+    func setupNavigation() {
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    // MARK: - button handlers
+    
+    @IBAction func newRoundPressed(sender: UIButton) {
+        performSegue(withIdentifier: "newRoundSegue", sender: sender)
     }
 }
